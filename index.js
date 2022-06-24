@@ -72,7 +72,13 @@ export const getFirstTwoArgs = (...arr) => {
 //    return a NEW object, do not modify the object passed in to the function
 //    use spread operator to create a new object
 
-export const addSneakerCount = () => {}
+export const addSneakerCount = ({ object, shoes  }) => 
+{
+const shoeLegnth = shoes.length 
+  return ({...shoes, sneakerCount: shoeLegnth})
+  }
+
+
 
 // INPUT: brands from data.js
 // OUTPUT: the brand names listed
